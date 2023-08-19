@@ -1,0 +1,204 @@
+@charset "utf-8";
+/* CSS Document */
+/*///////////////////////////////////*/
+/* Animations */
+
+@keyframes growTextElastic {
+	0% {
+		font-size: 40px;
+	}
+	
+	50% {
+		font-size: 48px;
+	}
+	
+	100% {
+		font-size: 40px;
+	}
+}
+
+.growTextElastic {
+	animation: growTextElastic 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes growPicture {
+	from {
+		transform: scale(100%);
+	}
+	
+	to {
+		transform: scale(105%);
+	}
+}
+
+.growPicture:hover {
+	animation: growPicture 1s;
+	transform: scale(105%);
+}
+
+/*///////////////////////////////////*/
+/* Transitions */
+.btn {
+	/* Play around with this */
+	font-size: 2rem;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 500;
+	padding: 0.5em 1em;
+	color: #725AA5;
+	background-color: black;
+	border: 10px;
+	border-color: #725AA5;
+	border-width: 10px;
+	border-style: ridge;
+	border-radius: 20px;
+	
+	/*transition-property: transform;
+	transition-duration: 0.3s;
+	transition-timing-function: ease-in-out;
+	transition-delay: 0s;*/
+	
+	/*transition: transform 0.3s ease-in-out 0s;*/
+	/*transition: transform 0.3s, background-color 0.3s, color 0.3s;*/
+	transition: all 0.5s;
+	
+}
+
+.btn:hover {
+/*	transform: translateY(-10px);*/
+	/*background-color: orange;
+	color: red;*/
+	
+	/*animation: growPicture 1s;*/
+	transform: scale(115%);
+}
+
+/*///////////////////////////////////*/
+/* Basic CSS */
+
+header {
+  	color: #725AA5;
+  	background: rgba(10,10,10,10);
+  	padding: 50px;
+  	text-align: center;
+	font-size: 32px;
+	text-shadow: 0px 0px 15px blue;
+	height: 130px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	z-index: 2;
+}
+
+body {
+  	margin: 0;
+  	padding: 0;
+	height: 100%;
+  	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+	background-color: rgba(150,150,150,200);
+	color: rgba(10,10,10,100);
+}
+
+img {
+  	width: 25vmax;
+}
+
+h2 {
+	font-size: 32px;
+}
+
+h3 {
+	font-size: 24px;
+	text-align: center;
+}
+
+p {
+	font-size: 32px;
+	text-align: center;
+}
+
+.pageContent {
+  	padding: 1.5%;
+  	display: flex;
+  	display: -ms-flexbox;
+}
+
+.sidebar {
+  	-ms-flex: 40%;
+  	flex: 40%;
+  	padding-right: 2%;
+	text-align: center;
+	
+	z-index: 2;
+}
+
+.sidebar h2 {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+}
+
+.sidebar img {
+	border: thick;
+	border-color: #725AA5;
+	border-style: double;
+}
+
+.main {
+  	-ms-flex: 40%;
+  	flex: 40%;
+	padding: 10%;
+}
+
+/* Footer */
+.footer {
+	bottom: 100vmin;
+	left: 40%;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+/* Navagation Bar */
+#navigationBar {
+	background-color:rgba(125,125,125,255);
+  	position: sticky;
+  	top: 0;
+	z-index: 4;
+	opacity: 1;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	margin: 0 auto; /* This made the nav bar center to the screen */
+	text-align: center;
+	
+}
+
+#navigationBar a {
+  	color: rgb(10,10,10);
+	text-decoration: none;
+	font-size: 32px;
+	font-weight: 600;
+  	display: inline-block;
+	padding: 1.5%;
+	
+}
+
+#navigationBar #onPage { /* This is for showing which page we or on in the nav bar*/
+	background-color:rgba(110,110,110,255);
+}
+
+/*///////////////////////////////////*/
+/* Adaptability */
+@media screen and (max-width:700px) {
+
+  #navigationBar {
+    position: relative;
+  }
+
+  .pageContent {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-height:2000px) {
+	
+	.footer {
+		
+	}
+}

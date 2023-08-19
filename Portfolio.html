@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	  <link rel="stylesheet" href="css_files/Portfolio.css">
+	  <meta charset="UTF-8">
+	  <title>
+	  	Alexander's Portfolio
+	  </title>
+	  <link href="/images/favicon-icon-24.jpg" rel="icon" type="image/x-icon" />
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+
+    <header id="top" >
+      <h1 class="growTextElastic">Alexander McTernan Games</h1>
+    </header>
+
+    <div id="navigationBar">
+      		<a href="Home.html">About Me</a>
+			<a href="Portfolio.html" id="onPage">Portfolio</a>
+			<a href="Resume.html">Resume</a>
+    </div>
+
+    <div class="pageContent"> 
+
+			<div class="sidebar">
+				
+				<div id="sideNavigationBar">
+					<h2>
+						Page Navigation
+					</h2>
+					
+				
+				<a href="#top">Top</a>
+				<br>
+				<a href="#section1">Cable Justice</a>
+				<br>
+				<a href="#section2">MarioKart</a>
+				<br>	
+				<a href="#section3">Small Adventure Game</a>
+				<br>	
+				<a href="#section4">Zelda</a>
+				<br>	
+				<a href="#section5">Bomberman Clone</a>
+				<br>	
+				<a href="#section6">Breakout</a>
+				<br>	
+				<a href="#section7">Asteroids</a>
+				<br>	
+				<a href="#section8">Dount Card Game</a>
+				</div>
+				
+			</div>
+
+			<div class="main">
+				
+				<h3 id="section1">Cable Justice</h3>
+				<p>
+					This is the first big project prototype that I completed in Unreal Engine 5 and it was created by a group of 6 of us for our second year project of the Game Development program at Algonquin College. This game is inspired by the game Fez. Using Prespective as your greatest ally, solve each of the 4 rooms by collecting all 3 pieces of evidence to open the door to the next room. Pickup and throw balls to hit switches that control doors that block your way to different pieces of evidence.
+				</p>
+				<p>
+					I was the project manager for this project, and that role came with many responsibilities that involved taking meeting minutes every week, deligating tasks to the team, and creating the Game Design Document <a href="files/Game_Design_Document_V0.6.docx" download="Cable Justice GDD">(Download here)</a>. I was also the connection between the prof and the rest of the team. I learned a lot of lessons in this role like how to work with different kinds of people and good efficient planning habits. Going into this project I was unaware how long certain tasks would take and this really taught me how much work to deligate out and who could do what. It taught me to understand people in a new way and taught me how to approach situations where work may or may not be getting done the way that needs to be done or not at all, and how to do it in a proffesional matter. We also overscoped the project and I had to make a decision on what to cut and what to keep so we can make our deadlines.
+				</p>
+				<p>
+					I was also one of the programmers on the team as well. I was responsible for the mechanics of the player, which involved the movement, pickup, drop and throw, and the distance tracker above them, and the post processing materials that allowed the player and other objects to be seen through walls. This helped visibility through the many walls in the maze. I also created full Module Design Documents for all of the mechanics that I created that can be downloaded here: <a href="files/CJ Module Design Documents.zip" download="Cable Justice Player Interaction Module">Download MDDs</a>
+				</p>
+				<iframe class = "video" frameborder = "0" src = "https://www.youtube.com/embed/3GiktJ08tdM" allowfullscreen = "true"></iframe>
+				<hr>
+				
+				<h3 id="section2">MarioKart</h3>
+				<p>
+					This is my favorite project that I have been working on in my school career so far. Using a game engine that I
+					built the initial render pipeline on, I was able to build a MarioKart clone using the Box2D library. This 
+					engine is built with C++ and bgfx. The game architecture is built upon a component system and with the help
+					of the ImGui library, it has a work in progress editor.
+				</p>
+				<p>
+					The main focus of this project was to get comfortable using new libraries and building them into our projects. The Box2D library allowed us to use 2D physics in this game, which allowed us to put in many different mechanics starting with the basic acceleration and collision, to adding speedpads, oilsicks and coin pickups.
+				</p>
+				<iframe class = "video" src = "https://www.youtube.com/embed/Y-yqrC6atl0"></iframe>
+				<hr>
+				
+				<h3 id="section3">Small Adventure Game</h3>
+				<p>
+					Using and building upon the same engine that was used for the Mariokart game above, I was able to add some new features that are showcased in the below video. We learned how to implement heightmaps into our engine that use the different shades of the image to corrolate to a different height for the character to move around on. Speaking of the character, we learned how to put 3D objects into the window as well. This creates more interesting stuff that we can do. 
+				</p>	
+				<p>
+					After adding both of those features, I started putting light into the engine as well to showcase the 3D objects more and to give the world more visual effects. Once I added one lightsource, I learned how to move and add multiple light sources and have the different sources combine properly on surfaces. The final big feature I was able to build into the engine was to deform terrain during runtime and to have the lights and reflections adjust accordingly.
+				</p>
+				<iframe class = "video" frameborder = "0" src = "https://www.youtube.com/embed/Af8eQjnbCzc" allowfullscreen = "true"></iframe>
+				<hr>
+				
+				<h3 id="section4">Zelda</h3>
+				<p>
+					In the Fall 0f 2022 I had the chance to build our own 2D game engine from scratch. We learned how to create the initial
+					Render pipeline, create an event system, a controller, and so much more. Here you will see the final product of what we
+					were able to do in the 4 months of class. Among what is listed above, we built the ability to read in spritesheets, 
+					build a Tilemap, Animations, and even learned how to do A-Star pathfinding. Here you see Link traveling around, only being able 
+					to walk on the dirt tiles, and an AI traveling between 4 different patrol points. The user is able to change the contents of the tile above 
+					them as well. If the AI's path gets blocked, it no longer has a complete path to the next point and will not move until a path 
+					is presented to it.
+				</p>
+				<iframe class = "video" frameborder = "0" src = "https://www.youtube.com/embed/5LFJFiy416g" allowfullscreen = "true"></iframe>
+				<hr>
+
+				<h3 id="section5">Bomberman Clone</h3>
+				<p>This is a Bomberman clone that I created for the Ubisoft Next competition in 2023. We had 3 days to build this project using their API as a 
+					base. I was able to bring in skills and ideas that I learned while building the above game engines and use them to great effect, most notably 
+					being the Tilemapping and A* Pathfinding.
+				</p>
+				<iframe class = "video" frameborder = "0" src = "https://www.youtube.com/embed/IEsy9PlXE9E" allowfullscreen = "true"></iframe>
+				<hr>
+				
+
+				<h3 id="section6">Breakout</h3>
+				<p>
+					In my first year of the Game Development program that I am taking I was tasked with the project of creating a version of the classic game Breakout using the professors custom game engine. Here I learned how box and line collision works and how to implement it. This allowed me to implement many features such as basic hitting of the ball off the paddle, blocks and the wall, and then some other features such as powerups that made the game more interesting and fun to play, such as growing and shrinking of the paddle and the ball. He also showed me how to implement Easing and Tweening to make these effects more smooth.
+				</p>
+				<iframe class = "video" frameborder = "0" src = "https://www.youtube.com/embed/Qjr5-rbPygU" allowfullscreen = "true"></iframe>
+				<hr>
+
+				<h3 id="section7">Asteroids</h3>
+				<p>
+					In my first year of the Game Development program that I am taking I was given the taks of creating my own version of Asteroids using the professors custom game engine. This is the first game that I was able to build in my career. This is where I learned how the basic game loop is run and how to manipulate it.
+				</p>
+				<p>
+					This game showed me how to implement speed, player controls, circle to circle collision and spawning objects from an object pool as a form of memeory management. After the school year I went back in and added a bunch more features as a form of practice. These features include adding a main menu and the ability to restart the game without restarting the whole program, a highscore table that sorts its self from highest to lowest if you wanna battle for the highscore, respawning asteroids, a lives system with a spawn delay, and then of course, audio effects. I am really happy with how the project turned out.
+				</p>
+				<iframe class = "video" frameborder = "0" src = "https://www.youtube.com/embed/VhLE5Xzd_mM" allowfullscreen = "true"></iframe>
+				<hr>
+
+				<h3 id="section8">Dount Card Game</h3>
+				<p>
+					Below has nothing to do with programming but in the first year of my program I was told to make my own version of the card game Love Letter and this is the version I came up with and I had a lot of fun with it so I thought I would show it off. This was all created using Adobe Illustrator.
+				</p>
+				<img src="images/One of each.JPG" alt="This shows each individual card created.">
+				<img src="images/Final product.JPG" alt="This shows all of the cards that were created.">
+				
+
+			</div>
+
+    </div>
+	  
+	  <div class = "footer">
+	  
+		  <h5>
+		  	Copyright 2023 Alexander McTernan. All rights reserved.
+		  </h5>
+	  
+	  </div>
+
+  </body>
+
+</html>

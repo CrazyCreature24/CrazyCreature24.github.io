@@ -1,0 +1,22 @@
+header {
+	color:white;
+}
+
+#fullpage {
+	background-color: black;
+}
+
+.btn-placement {
+	display: inline-block;
+	padding: 1.5%;
+	position: sticky;
+	align-content: center;
+}
+
+.PermanentMarkerMedium0 {
+	align-content: center;
+}
+
+.title-block-75 {
+	align-items: center;
+}
