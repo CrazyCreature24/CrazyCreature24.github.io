@@ -186,13 +186,30 @@ p {
 /* Adaptability */
 @media screen and (max-width:700px) {
 
-  #navigationBar {
-    position: relative;
-  }
+  	#navigationBar {
+    	position: relative;
+  	}
 
-  .pageContent {
-    flex-direction: column;
-  }
+  	.pageContent {
+    	flex-direction: column;
+  	}
+	
+	p {
+		font-size: 18px;
+	}
+	
+	img {
+  		width: 90%;
+	}
+	
+	header {
+		padding-top: 5%;
+		height: 170px;
+	}
+	
+	#navigationBar a {
+		font-size: 24px;
+	}
 
 }
 

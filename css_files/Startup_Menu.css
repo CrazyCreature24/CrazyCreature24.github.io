@@ -129,3 +129,11 @@ body {
 #menu[data-active-index="3"] > #menu-background-image {
 	background-position: center 60%;
 }
+
+@media screen and (max-height:900px) {
+	
+	#menu-background-image {
+		height: 100%;
+		width: 100%;
+	}
+}
