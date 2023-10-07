@@ -21,6 +21,22 @@
 	animation-timing-function: ease-in-out;
 }
 
+.btn {
+	font-size: 18px;
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-weight: 500;
+	padding: 0.2em 0.5em;
+	color: #725AA5;
+	background-color: black;
+	border: 5px;
+	border-color: #725AA5;
+	border-width: 5px;
+	border-style: ridge;
+	border-radius: 10px;
+	text-align: right;
+	cursor: pointer;
+	
+}
 
 header {
   	color: #725AA5;
